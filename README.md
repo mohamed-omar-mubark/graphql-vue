@@ -12,7 +12,7 @@ This project demonstrates how to build a **Vue.js** application integrated with 
 
 - **GraphQL Server**:
   - Built with **Apollo Server**.
-  - Provides a simple API with queries for `hello` and `users`.
+  - Provides a simple API with query for `users`.
   - Introspection enabled for schema exploration.
 
 - **Vue.js Frontend**:
@@ -61,13 +61,6 @@ graphql-vue/
 ### Example Queries
 
 - Here are some example queries you can run in the GraphQL Playground:
-
-**Fetch Hello Message**
-```bash
-query {
-  hello
-}
-```
 
 **Fetch Users**
 ```bash

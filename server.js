@@ -2,11 +2,6 @@ import { ApolloServer, gql } from "apollo-server";
 
 // Define schema
 const typeDefs = gql`
-  type Query {
-    hello: String
-    users: [User!]!
-  }
-
   type User {
     id: ID!
     name: String!
@@ -24,7 +19,6 @@ const users = [
 // Resolvers
 const resolvers = {
   Query: {
-    hello: () => "Hello from Apollo Server!",
     users: () => users,
   },
 };
